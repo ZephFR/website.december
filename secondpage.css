@@ -1,0 +1,107 @@
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span1 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(207, 175, 81);
+    margin: 6px 0;
+}
+
+.burger-icon span2 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(249, 59, 59);
+    margin: 6px 0;
+}
+
+.burger-icon span3 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 208, 0);
+    margin: 6px 0;
+}
+
+.burger-icon span4 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(68, 48, 16);
+    margin: 6px 0;
+}
+
+.burger-icon span5 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(43, 125, 36);
+    margin: 6px 0;
+}
+
+.burger-icon span6 {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: rgb(243, 206, 93);;
+    margin: 6px 0;
+}
+
+body {
+    width: 99%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}

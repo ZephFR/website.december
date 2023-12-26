@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30cm;
+  color: white;
+  flex-direction: column;
+
+
+  width: 99%;
+  height: 100%;
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+    from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+.Formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PageEntree {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(#acacac, rgb(97, 97, 97));
+}
+
+.PageEntree button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.PageEntree button:hover {
+  background-color: #ddd;
+}
+
+.BoxFormulaire {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 21%, rgba(111,0,255,1) 100%);
+  color: white;
+}
+
+.BoxFormulaire h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+h6 {
+  bottom: 30cm;
+  color: white;
+  flex-direction: column;
+}

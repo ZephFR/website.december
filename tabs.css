@@ -1,0 +1,140 @@
+/* Style the tab */
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: rgb(2,0,36);
+    background: linear-gradient(22deg, rgb(7, 0, 135) 0%, rgb(17, 17, 213) 35%, rgb(155, 255, 138) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: #43fdfd52;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: #53f3fe87;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.card {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  justify-content: center;
+}
+
+.card a {
+  text-decoration: none;
+  justify-content: center;
+}
+
+.content {
+  padding: 1.1rem;
+  justify-content: center;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 35px;
+  background-color: rgb(198, 91, 248);
+  justify-content: center;
+}
+
+.image h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.image h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  justify-content: center;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.action span {
+  transition: .3s ease;
+  justify-content: center;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+  justify-content: center;
+}
+
+body {
+    width: 99%;
+  height: 100%;
+  --s: 200px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
+}
